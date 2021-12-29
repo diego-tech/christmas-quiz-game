@@ -1,6 +1,7 @@
 import React from 'react';
 
 // Import Types
+import { AnswerObject } from '../App';
 
 // Import Syles
 
@@ -8,7 +9,7 @@ type Props = {
   question: string;
   answers: string[];
   callback: any;
-  userAnswer: any;
+  userAnswer: AnswerObject | undefined;
   questionNr: number;
   totalQuestions: number;
 };
