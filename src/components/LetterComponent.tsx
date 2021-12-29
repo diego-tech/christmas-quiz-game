@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // Import Utilities
 import { motion } from 'framer-motion';
@@ -16,6 +16,8 @@ type Props = {
 };
 
 const LetterComponent: React.FC<Props> = ({ callback }) => {
+  const [finishTyping, setFinishTyping] = useState(false);
+
   return (
     <LetterStyle>
       <motion.div
@@ -23,18 +25,26 @@ const LetterComponent: React.FC<Props> = ({ callback }) => {
         animate={{ scale: 3 }}
         transition={{ duration: 0.5 }}
       >
-        {/* <Typewriter
+        <Typewriter
           options={{
             autoStart: false,
-            delay: 70,
+            delay: 0.1,
             cursor: '',
           }}
           onInit={(typewriter) => {
-            typewriter.pauseFor(1000).typeString(letter).start();
+            typewriter
+              .pauseFor(1000)
+              .typeString(letter)
+              .start()
+              .callFunction(() => {
+                setFinishTyping(true);
+              });
           }}
-        /> */}
+        />
 
-        <button onClick={callback}>Comenzar</button>
+        <div className="btn-container">
+          {finishTyping ? <button onClick={callback}>Comenzar</button> : null}
+        </div>
       </motion.div>
     </LetterStyle>
   );

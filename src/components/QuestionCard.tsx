@@ -23,6 +23,7 @@ const QuestionCard: React.FC<Props> = ({
   totalQuestions,
 }) => (
   <div>
+    <h1>REACT QUIZ</h1>
     <p className="number">
       Pregunta: {questionNr} / {totalQuestions}
     </p>
