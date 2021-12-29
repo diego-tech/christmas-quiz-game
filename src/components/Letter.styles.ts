@@ -2,16 +2,29 @@
 import styled from 'styled-components';
 
 export const LetterStyle = styled.div`
-  margin: 100px;
+  margin: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .container {
     background: hsl(49 37% 94%);
-    margin-top: 40%;
+    margin-top: 10%;
     padding: 5px;
-    width: 500px;
-    height: 250px;
+    width: 30%;
+    height: 10%;
     border-radius: 5px;
     box-shadow: 0px 0px 3px rgba(170, 178, 177, 0.4);
+  }
+
+  p {
+    display: block;
+    visibility: hidden;
+    font-family: 'Licorice', cursive;
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 10px;
+    font-weight: 600;
   }
 
   .Typewriter__wrapper {
