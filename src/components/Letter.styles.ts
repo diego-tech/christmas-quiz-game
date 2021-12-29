@@ -9,7 +9,7 @@ export const LetterStyle = styled.div`
     margin-top: 40%;
     padding: 5px;
     width: 500px;
-    height: 300px;
+    height: 250px;
     border-radius: 5px;
     box-shadow: 0px 0px 3px rgba(170, 178, 177, 0.4);
   }
