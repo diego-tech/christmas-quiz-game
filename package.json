@@ -10,10 +10,15 @@
     "@types/node": "^16.11.17",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.19",
+    "fireworks": "^2.2.7",
+    "framer-motion": "^5.5.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
+    "styled-components": "^5.3.3",
     "typescript": "^4.5.4",
+    "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
