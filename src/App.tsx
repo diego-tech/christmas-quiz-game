@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
+// Import Components
+import QuestionCard from './components/QuestionCard';
+
+// Import Api
+import { fetchQuizQuestions, QuestionState } from './API';
+
+// Import Styles
+
+export type AnswerObject = {
+  question: string;
+  answer: string;
+  correct: boolean;
+  correctAnswer: string;
+};
+
+const TOTAL_QUESIONTS = 10;
+
+const App: React.FC = () => {
+  const [loading, setLoading] = useState(false);
+  const [questions, setQuestions] = useState<QuestionState[]>([]);
+  const [number, setNumber] = useState(0);
+  const [userAnswers, setUserAnswers] = useState<AnswerObject[]>([]);
+  const [score, setScore] = useState(0);
+  const [gameOver, setGameOver] = useState(true);
+
+  const startQuizGame = async () => {};
+
+  const checkAnswer = (e: any) => {};
+
+  const nextQuestion = () => {};
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Hola React</p>
     </div>
   );
-}
+};
 
 export default App;
