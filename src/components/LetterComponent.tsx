@@ -28,13 +28,13 @@ const LetterComponent: React.FC<Props> = ({ callback }) => {
         <Typewriter
           options={{
             autoStart: false,
-            delay: 30,
+            delay: .1,
             cursor: '',
           }}
           onInit={(typewriter) => {
             typewriter
               .pauseFor(1000)
-              .typeString(letter)
+              .typeString('Hola Mundo')
               .start()
               .callFunction(() => {
                 setFinishTyping(true);

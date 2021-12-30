@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 // Import Components
 import QuestionCard from './components/QuestionCard';
 import LetterComponent from './components/LetterComponent';
+import FireworkComponent from './components/FireworkComponent';
 
 // Import Api
 import { fetchQuizQuestions, QuestionState } from './API';
@@ -20,6 +21,7 @@ export type AnswerObject = {
 const TOTAL_QUESTIONS = 10;
 
 const App: React.FC = () => {
+  const [startGame, setStartGame] = useState(true);
   const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState<QuestionState[]>([]);
   const [number, setNumber] = useState(0);
@@ -30,6 +32,7 @@ const App: React.FC = () => {
   const startQuizGame = async () => {
     setLoading(true);
     setGameOver(false);
+    setStartGame(false);
     const newQuestions = await fetchQuizQuestions(TOTAL_QUESTIONS);
     setQuestions(newQuestions);
     setNumber(0);
@@ -74,9 +77,7 @@ const App: React.FC = () => {
     <>
       <GlobalStyle />
       <Wrapper>
-        {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
-          <LetterComponent callback={startQuizGame} />
-        ) : null}
+        {startGame ? <LetterComponent callback={startQuizGame} /> : null}
         {!gameOver ? <p className="score">Score: {score}</p> : null}
         {loading ? <p>Loading Questions... </p> : null}
         {!loading && !gameOver && (
@@ -92,10 +93,15 @@ const App: React.FC = () => {
         {!gameOver &&
         !loading &&
         userAnswers.length === number + 1 &&
-        number !== TOTAL_QUESTIONS - 1 ? (
+        number !== TOTAL_QUESTIONS ? (
           <button className="next" onClick={nextQuestion}>
             Next Question
           </button>
+        ) : null}
+
+        {(gameOver && !startGame) ||
+        userAnswers.length === TOTAL_QUESTIONS + 1 ? (
+          <FireworkComponent />
         ) : null}
       </Wrapper>
     </>

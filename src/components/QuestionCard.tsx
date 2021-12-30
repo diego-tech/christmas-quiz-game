@@ -4,6 +4,7 @@ import React from 'react';
 import { AnswerObject } from '../App';
 
 // Import Syles
+import { Wrapper, ButtonWrapper } from './QuestionCard.styles';
 
 type Props = {
   question: string;
@@ -22,15 +23,18 @@ const QuestionCard: React.FC<Props> = ({
   questionNr,
   totalQuestions,
 }) => (
-  <div>
-    <h1>REACT QUIZ</h1>
+  <Wrapper>
     <p className="number">
       Pregunta: {questionNr} / {totalQuestions}
     </p>
     <p dangerouslySetInnerHTML={{ __html: question }} />
     <div>
       {answers.map((answer) => (
-        <div>
+        <ButtonWrapper
+          key={answer}
+          correct={userAnswer?.correctAnswer === answer}
+          userClicked={userAnswer?.answer === answer}
+        >
           <button
             disabled={userAnswer ? true : false}
             value={answer}
@@ -38,10 +42,10 @@ const QuestionCard: React.FC<Props> = ({
           >
             <span dangerouslySetInnerHTML={{ __html: answer }} />
           </button>
-        </div>
+        </ButtonWrapper>
       ))}
     </div>
-  </div>
+  </Wrapper>
 );
 
 export default QuestionCard;
