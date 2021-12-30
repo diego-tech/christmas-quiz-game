@@ -78,7 +78,6 @@ const App: React.FC = () => {
       <GlobalStyle />
       <Wrapper>
         {startGame ? <LetterComponent callback={startQuizGame} /> : null}
-        {!gameOver ? <p className="score">Score: {score}</p> : null}
         {loading ? <p>Loading Questions... </p> : null}
         {!loading && !gameOver && (
           <QuestionCard
@@ -90,6 +89,7 @@ const App: React.FC = () => {
             callback={checkAnswer}
           />
         )}
+
         {!gameOver &&
         !loading &&
         userAnswers.length === number + 1 &&
@@ -99,6 +99,7 @@ const App: React.FC = () => {
           </button>
         ) : null}
 
+        {gameOver ? <p className="score">Score: {score}</p> : null}
         {(gameOver && !startGame) ||
         userAnswers.length === TOTAL_QUESTIONS + 1 ? (
           <FireworkComponent />
