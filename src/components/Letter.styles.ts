@@ -2,35 +2,36 @@
 import styled from 'styled-components';
 
 export const LetterStyle = styled.div`
-  margin: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 
   .container {
     background: hsl(49 37% 94%);
-    margin-top: 10%;
     padding: 5px;
     width: 30%;
     height: 10%;
     border-radius: 5px;
-    box-shadow: 0px 0px 3px rgba(170, 178, 177, 0.4);
+    box-shadow: 0px 0px 3px rgba(249, 192, 192, .3);
   }
 
-  p {
-    display: block;
+  .spanHidden {
     visibility: hidden;
-    font-family: 'Licorice', cursive;
-    padding-left: 10px;
-    font-size: 12px;
-    line-height: 10px;
-    font-weight: 600;
   }
 
+  .Typewriter {
+    position: absolute;
+  }
+
+  .spanHidden,
   .Typewriter__wrapper {
     font-family: 'Licorice', cursive;
-    padding-left: 10px;
-    font-size: 12px;
+    padding: 10px;
+    font-size: 1em;
     line-height: 10px;
     font-weight: 600;
   }
@@ -41,21 +42,22 @@ export const LetterStyle = styled.div`
     justify-content: center;
   }
 
-  .container button {
-    background-color: rgba(158, 10, 26, 255);
-    color: #f8acaf;
-    font-size: 10px;
-    font-family: 'Open Sans', Verdana;
+  button {
+    margin: 3%;
+    background-color: rgba(169, 26, 28, 1);
+    color: rgba(249, 245, 243, 1);
+    font-size: 0.625em;
+    font-family: 'Open Sans', cursive;
     padding: 0;
-    width: 15%;
-    height: 20px;
+    width: 20%;
+    height: 16px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     transition: all 300ms;
   }
 
-  .container button:hover {
+  button:hover {
     transform: scale(1.1, 1.1);
   }
 `;
