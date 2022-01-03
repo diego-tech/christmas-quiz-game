@@ -26,16 +26,10 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50%;
+  margin-top: 30%;
 
   > p {
     color: #fff;
-  }
-
-  .score {
-    color: #fff;
-    font-size: 2rem;
-    margin: 0;
   }
 
   .next {

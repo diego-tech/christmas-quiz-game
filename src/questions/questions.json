@@ -1,58 +1,68 @@
 {
   "results": [
     {
-      "question": "By what name is Diego Munoz better known? ",
-      "correct_answer": "Charlie Sheen",
-      "incorrect_answers": ["Ricky Martin", "Bruno Mars", "Joaquin Phoenix"]
+      "question": "Una de las tradiciones más románticas de la Navidad consiste en que si coincides con otra persona bajo una planta concreta, tienes que besarte con ella. ¿Qué planta es?",
+      "correct_answer": "Muérdago",
+      "incorrect_answers": ["Jazmín", "Pino", "Pascuero"]
     },
     {
-      "question": "Which actress married Michael Douglas in 2000?",
-      "correct_answer": "Catherine Zeta-Jones",
-      "incorrect_answers": ["Ruth Jones", "Pam Ferris", "Sara Sugarman"]
+      "question": "Según el folclore, el trineo mágico de Santa Claus cuenta con nueve renos. Identifica el nombre que no pertenezca a ninguno de ellos.",
+      "correct_answer": "Blitzer",
+      "incorrect_answers": ["Rudolph", "Donner", "Prancer"]
     },
     {
-      "question": "What does film maker Dan Bell typically focus his films on?",
-      "correct_answer": "Abandoned Buildings and Dead Malls",
+      "question": "¿Dónde surgió la tradición de decorar el árbol de Navidad?",
+      "correct_answer": "En Alemania",
       "incorrect_answers": [
-        "Historic Landmarks",
-        "Action Films",
-        "Documentaries "
+        "En España",
+        "En USA",
+        "En China"
       ]
     },
     {
-      "question": "What was the cause of Marilyn Monroes suicide?",
-      "correct_answer": "Drug Overdose",
-      "incorrect_answers": ["Knife Attack", "House Fire", "Gunshot"]
+      "question": "El Grinch es una criatura peluda que representa una parodia de lo que el consumismo le ha hecho a la Navidad. ¿De qué color es?",
+      "correct_answer": "Verde",
+      "incorrect_answers": ["Azul", "Amarillo", "Rojo"]
     },
     {
-      "question": "Gwyneth Paltrow has a daughter named...?",
-      "correct_answer": "Apple",
-      "incorrect_answers": ["Lily", "French", "Dakota"]
+      "question": "¿Dónde se cree que se encuentran los restos de los Reyes Magos?",
+      "correct_answer": "En Colonia",
+      "incorrect_answers": ["En el Vaticano", "En Jerusalén", "En Nuremberg"]
     },
     {
-      "question": "Which celebrity announced his presidency in 2015?",
-      "correct_answer": "Kanye West",
-      "incorrect_answers": ["Donald Trump", "Leonardo DiCaprio", "Miley Cyrus"]
+      "question": "¿Es cierto que la Iglesia intentó erradicar la costumbre del árbol de Navidad?",
+      "correct_answer": "Sí",
+      "incorrect_answers": ["No", "Puede Ser", "Todas Son Correctas"]
     },
     {
-      "question": "Aubrey Graham is better known as",
-      "correct_answer": "Drake",
-      "incorrect_answers": ["Travis Scott", "Lil Wayne", "2 Chainz"]
+      "question": "¿En qué siglo nació la costumbre de tomar uvas el último día del año?",
+      "correct_answer": "S.XIX",
+      "incorrect_answers": ["S.XVII", "S.XVIII", "S.XX"]
     },
     {
-      "question": "Neil Hamburger is played by which comedian?",
-      "correct_answer": "Gregg Turkington",
-      "incorrect_answers": ["Nathan Fielder", "Tim Heidecker", "Todd Glass"]
+      "question": "¿Quién inventó las tarjetas o postales navideñas?",
+      "correct_answer": "Henry Cole",
+      "incorrect_answers": ["Arthur Mathews", "Norman Foster", "Michael Schumacher"]
     },
     {
-      "question": "By which name is Ramon Estevez better known as?",
-      "correct_answer": "Martin Sheen",
-      "incorrect_answers": ["Charlie Sheen", "Ramon Sheen", "Emilio Estevez"]
+      "question": "En Finlandia mantienen el árbol de Navidad adornado y con luces hasta 20 días después de la celebración de Navidad",
+      "correct_answer": "Falso",
+      "incorrect_answers": ["Verdadero", "Puede Ser", "Todas Son Correctas"]
     },
     {
-      "question": "What was James Coburn&#039;s last film role before his death?",
-      "correct_answer": "American Gun",
-      "incorrect_answers": ["Monsters Inc", "Texas Rangers", "Snow Dogs"]
+      "question": "¿Cuál es el lugar del planeta en el que se entra antes al nuevo año?",
+      "correct_answer": "La Isla Kiritimati",
+      "incorrect_answers": ["La Isla de Pascua", "La Isla Bora Bora", "La Isla Pukapuka"]
+    },
+    {
+      "question": "¿Cuándo aparecieron los villancicos?",
+      "correct_answer": "S.VI",
+      "incorrect_answers": ["S.II", "S.IV", "S.VIII"]
+    },
+    {
+      "question": "¿En qué país es tradición limpiar de arriba a abajo la casa el día 31 de diciembre para recibir el nuevo año?",
+      "correct_answer": "En Japón",
+      "incorrect_answers": ["En India", "En Reino Unido", "En Venezuela"]
     }
   ]
 }

@@ -34,7 +34,7 @@ const LetterComponent: React.FC<Props> = ({ callback }) => {
           onInit={(typewriter) => {
             typewriter
               .pauseFor(1000)
-              .typeString('Hola Mundo')
+              .typeString(letter)
               .start()
               .callFunction(() => {
                 setFinishTyping(true);

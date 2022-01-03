@@ -31,7 +31,7 @@ export const LetterStyle = styled.div`
   .Typewriter__wrapper {
     font-family: 'Licorice', cursive;
     padding: 10px;
-    font-size: 1rem;
+    font-size: 0.7rem;
     line-height: 10px;
     font-weight: 600;
   }

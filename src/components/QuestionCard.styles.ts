@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  max-width: 1100px;
+  max-width: 600px;
   background: hsl(49 37% 94%);
   border-radius: 10px;
   padding: 20px;
@@ -10,7 +10,9 @@ export const Wrapper = styled.div`
   text-align: center;
 
   p {
-    font-size: 1rem;
+    font-family: 'Moon Dance', cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 `;
 
@@ -28,14 +30,18 @@ export const ButtonWrapper = styled.div<ButtonWrapperProps>`
 
   button {
     cursor: pointer;
-    font-size: 0.9rem;
     width: 100%;
     height: 40px;
     margin: 5px 0;
     background: ${({ correct, userClicked }) =>
-      correct ? '#1E792C' : !correct && userClicked ? '#B11E31' : '#1e81b0'};
+    correct ? '#1E792C' : !correct && userClicked ? '#B11E31' : '#1e81b0'};
     border-radius: 10px;
     border: none;
     color: #fff;
+  }
+
+  button span {
+    font-family: 'Moon Dance', cursive;
+    font-size: 1.5rem;
   }
 `;

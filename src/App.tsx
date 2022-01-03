@@ -18,7 +18,7 @@ export type AnswerObject = {
   correctAnswer: string;
 };
 
-const TOTAL_QUESTIONS = 10;
+const TOTAL_QUESTIONS = 12;
 
 const App: React.FC = () => {
   const [startGame, setStartGame] = useState(true);
@@ -87,6 +87,7 @@ const App: React.FC = () => {
             answers={questions[number].answers}
             userAnswer={userAnswers ? userAnswers[number] : undefined}
             callback={checkAnswer}
+            score={score}
           />
         )}
 
@@ -95,11 +96,10 @@ const App: React.FC = () => {
         userAnswers.length === number + 1 &&
         number !== TOTAL_QUESTIONS ? (
           <button className="next" onClick={nextQuestion}>
-            Next Question
+            Siguiente Pregunta
           </button>
         ) : null}
 
-        {gameOver ? <p className="score">Score: {score}</p> : null}
         {(gameOver && !startGame) ||
         userAnswers.length === TOTAL_QUESTIONS + 1 ? (
           <FireworkComponent />

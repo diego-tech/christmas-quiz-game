@@ -13,6 +13,7 @@ type Props = {
   userAnswer: AnswerObject | undefined;
   questionNr: number;
   totalQuestions: number;
+  score: number;
 };
 
 const QuestionCard: React.FC<Props> = ({
@@ -22,8 +23,10 @@ const QuestionCard: React.FC<Props> = ({
   userAnswer,
   questionNr,
   totalQuestions,
+  score,
 }) => (
   <Wrapper>
+    <p className='score'>Score: {score}</p>
     <p className="number">
       Pregunta: {questionNr} / {totalQuestions}
     </p>
