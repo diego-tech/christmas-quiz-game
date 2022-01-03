@@ -102,7 +102,7 @@ const App: React.FC = () => {
 
         {(gameOver && !startGame) ||
         userAnswers.length === TOTAL_QUESTIONS + 1 ? (
-          <FireworkComponent />
+          <FireworkComponent score={score} />
         ) : null}
       </Wrapper>
     </>

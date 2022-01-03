@@ -3,7 +3,7 @@ import React from 'react';
 // Import Types
 import { AnswerObject } from '../App';
 
-// Import Syles
+// Import Styles
 import { Wrapper, ButtonWrapper } from './QuestionCard.styles';
 
 type Props = {
