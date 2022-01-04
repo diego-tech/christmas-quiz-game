@@ -23,12 +23,12 @@ const LetterComponent: React.FC<Props> = ({ callback }) => {
       <motion.div
         className="container"
         animate={{ scale: 3 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: .7 }}
       >
         <Typewriter
           options={{
             autoStart: false,
-            delay: .1,
+            delay: 60,
             cursor: '',
           }}
           onInit={(typewriter) => {

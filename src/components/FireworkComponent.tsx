@@ -47,21 +47,49 @@ const fireworkProps = {
     x: (i + 1) * (window.innerWidth / 4),
     y: 300 + Math.random() * 100 + (i === 2 ? -80 : 0),
   }),
-  bubbleSizeMinimum: 1,
-  bubbleSizeMaximum: 15,
+  bubbleSizeMinimum: 5,
+  bubbleSizeMaximum: 20,
 };
 
 type Props = {
   score: number;
+  callback: any;
 };
 
-const FireworkComponent: React.FC<Props> = ({ score }) => {
+const FireworkComponent: React.FC<Props> = ({ score, callback }) => {
+  const scoreResult = score >= 6;
+  let fireworks;
+  let result;
+
+  if (scoreResult) {
+    fireworks = <Fireworks {...fireworkProps} />;
+    result = (
+      <EndGameWrapper>
+        <p>Felicidades. Tu puntuación es: {score}</p>
+        <p>
+          Recibe tus regalos, esperemos que te gusten y que esta pequeña prueba
+          no te haya molestado 😉.
+        </p>
+        <p>Firmado: <br /> Los Tres Reyes Magos de Oriente</p>
+      </EndGameWrapper>
+    );
+  } else {
+    fireworks = '';
+    result = (
+      <EndGameWrapper>
+        <p>Puntuación: {score}</p>
+        <p>Vuelve a intentarlo para recibir los regalos</p>
+        <div className="btn-container">
+          <button onClick={callback}>Volver a Intentar</button>
+        </div>
+      </EndGameWrapper>
+    );
+  }
   return (
     <>
-      <Fireworks {...fireworkProps} />
-      <EndGameWrapper>
-        <p>Felicidades. Puntuación: {score}</p>
-      </EndGameWrapper>
+      {fireworks}
+      {result}
+      {fireworks}
     </>
   );
 };

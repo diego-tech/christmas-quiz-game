@@ -11,8 +11,7 @@ export const Wrapper = styled.div`
 
   p {
     font-family: 'Moon Dance', cursive;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.7rem;
   }
 `;
 

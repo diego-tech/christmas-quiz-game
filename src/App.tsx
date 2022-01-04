@@ -38,6 +38,7 @@ const App: React.FC = () => {
     setNumber(0);
     setUserAnswers([]);
     setNumber(0);
+    setScore(0);
     setLoading(false);
   };
 
@@ -102,7 +103,7 @@ const App: React.FC = () => {
 
         {(gameOver && !startGame) ||
         userAnswers.length === TOTAL_QUESTIONS + 1 ? (
-          <FireworkComponent score={score} />
+          <FireworkComponent score={score} callback={startQuizGame} />
         ) : null}
       </Wrapper>
     </>

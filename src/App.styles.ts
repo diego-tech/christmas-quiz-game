@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30%;
+  margin-top: 25%;
 
   > p {
     color: #fff;

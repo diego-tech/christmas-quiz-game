@@ -15,4 +15,22 @@ export const EndGameWrapper = styled.div`
     font-size: 2rem;
     font-weight: 900;
   }
+
+  button {
+    margin: 3%;
+    background-color: rgba(169, 26, 28, 1);
+    color: rgba(249, 245, 243, 1);
+    font-size: 1.5rem;
+    font-family: 'Open Sans', cursive;
+    padding: 0;
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms;
+  }
+
+  button:hover {
+    transform: scale(1.1, 1.1);
+  }
 `;
