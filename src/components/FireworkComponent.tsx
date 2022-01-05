@@ -57,7 +57,7 @@ type Props = {
 };
 
 const FireworkComponent: React.FC<Props> = ({ score, callback }) => {
-  const scoreResult = score >= 6;
+  const scoreResult = score >= 8;
   let fireworks;
   let result;
 
@@ -70,7 +70,9 @@ const FireworkComponent: React.FC<Props> = ({ score, callback }) => {
           Recibe tus regalos, esperemos que te gusten y que esta pequeña prueba
           no te haya molestado 😉.
         </p>
-        <p>Firmado: <br /> Los Tres Reyes Magos de Oriente</p>
+        <p>
+          Firmado: <br /> Los Tres Reyes Magos de Oriente
+        </p>
       </EndGameWrapper>
     );
   } else {

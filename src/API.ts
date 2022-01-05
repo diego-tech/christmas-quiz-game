@@ -16,7 +16,7 @@ export const fetchQuizQuestions = async (
   amount: number
 ): Promise<QuestionState[]> => {
   const data = await Questions;
-
+  
   return data.results.map((question: Question) => ({
     ...question,
     answers: shuffleArray([

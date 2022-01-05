@@ -9,9 +9,9 @@ import { LetterStyle } from './Letter.styles';
 
 const letter = `Querida Verónica: <br/>
 
-Tras un 2021 un poco atípico, como el 2020 y más o menos como se presentá el 2022, que no es por ser pesimista eeee pero pinta feo, te has portado muy bien o eso nos consta en acta, tras ver tu carta de este año lo tuvimos claro a la primera, y es que este año no la hemos hecho ni puñetero caso, no te enfades eeeeeee pero vamos ni leerla.<br/>
+Tras un 2021 un poco atípico, te has portado muy bien o eso nos consta en acta, tras comprobar tu carta de este año lo tuvimos claro a la primera, y es que este año no la hemos hecho ni puñetero caso, no te enfades eeeeeee. <br />
 
-Bueno, te estarás preguntando que que es esto y basicamente, hemos contactado con Diego para que no te de los regalos hasta que no resuelvas las preguntas, son preguntas de Navidad y bueno alguna un poco más personal.<br/>
+Bueno, te estarás preguntando que que es esto y basicamente, hemos contactado con Diego para que no te de los regalos hasta que no resuelvas las preguntas, son preguntas de Navidad y bueno alguna un poco más personal.<br/><br/>
 
 - Una vez pulsada una respuesta se chequea automáticamente.<br/>
 - Deberás acertar la mitad o más de las preguntas si quieres tener tus regalos.<br/><br/>

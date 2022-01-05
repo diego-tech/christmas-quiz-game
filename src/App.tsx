@@ -18,7 +18,7 @@ export type AnswerObject = {
   correctAnswer: string;
 };
 
-const TOTAL_QUESTIONS = 12;
+const TOTAL_QUESTIONS = 16;
 
 const App: React.FC = () => {
   const [startGame, setStartGame] = useState(true);

@@ -11,13 +11,14 @@
       "incorrect_answers": ["Rudolph", "Donner", "Prancer"]
     },
     {
+      "question": "¿Cuál es el estilo de música que menos le gusta a Diego?",
+      "correct_answer": "El Reggaeton",
+      "incorrect_answers": ["El POP", "El Rock & Roll", "El Trap"]
+    },
+    {
       "question": "¿Dónde surgió la tradición de decorar el árbol de Navidad?",
       "correct_answer": "En Alemania",
-      "incorrect_answers": [
-        "En España",
-        "En USA",
-        "En China"
-      ]
+      "incorrect_answers": ["En España", "En USA", "En China"]
     },
     {
       "question": "El Grinch es una criatura peluda que representa una parodia de lo que el consumismo le ha hecho a la Navidad. ¿De qué color es?",
@@ -42,7 +43,20 @@
     {
       "question": "¿Quién inventó las tarjetas o postales navideñas?",
       "correct_answer": "Henry Cole",
-      "incorrect_answers": ["Arthur Mathews", "Norman Foster", "Michael Schumacher"]
+      "incorrect_answers": [
+        "Arthur Mathews",
+        "Norman Foster",
+        "Michael Schumacher"
+      ]
+    },
+    {
+      "question": "¿Cuál es el mayor sueño de Diego?",
+      "correct_answer": "Trabajar en la NASA",
+      "incorrect_answers": [
+        "Vivir Fuera de España",
+        "Vivir con la churri",
+        "Ser Productor Musical"
+      ]
     },
     {
       "question": "En Finlandia mantienen el árbol de Navidad adornado y con luces hasta 20 días después de la celebración de Navidad",
@@ -52,7 +66,11 @@
     {
       "question": "¿Cuál es el lugar del planeta en el que se entra antes al nuevo año?",
       "correct_answer": "La Isla Kiritimati",
-      "incorrect_answers": ["La Isla de Pascua", "La Isla Bora Bora", "La Isla Pukapuka"]
+      "incorrect_answers": [
+        "La Isla de Pascua",
+        "La Isla Bora Bora",
+        "La Isla Pukapuka"
+      ]
     },
     {
       "question": "¿Cuándo aparecieron los villancicos?",
@@ -63,6 +81,16 @@
       "question": "¿En qué país es tradición limpiar de arriba a abajo la casa el día 31 de diciembre para recibir el nuevo año?",
       "correct_answer": "En Japón",
       "incorrect_answers": ["En India", "En Reino Unido", "En Venezuela"]
+    },
+    {
+      "question": "¿Cuál es la comida favorita de Diego?",
+      "correct_answer": "La Pizza",
+      "incorrect_answers": ["Las Judias Verdes", "La Hamburguesa", "La Lasaña"]
+    },
+    {
+      "question": "¿Cuanto años tiene Diego?",
+      "correct_answer": "Ninguna es Correcta",
+      "incorrect_answers": ["Todas son correctas", "20", "22"]
     }
   ]
 }
