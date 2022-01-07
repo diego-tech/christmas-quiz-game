@@ -28,6 +28,7 @@ const App: React.FC = () => {
   const [userAnswers, setUserAnswers] = useState<AnswerObject[]>([]);
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(true);
+  const [startWeb, setStartWeb] = useState(false);
 
   const startQuizGame = async () => {
     setLoading(true);
@@ -78,7 +79,29 @@ const App: React.FC = () => {
     <>
       <GlobalStyle />
       <Wrapper>
-        {startGame ? <LetterComponent callback={startQuizGame} /> : null}
+        {!startWeb ? (
+          <form className="form">
+            <label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Contraseña"
+                onChange={(e) => {
+                  const value = e.target.value;
+
+                  if (value === '04052019VyD') {
+                    setStartWeb(true);
+                  } else {
+                    setStartWeb(false);
+                  }
+                }}
+              />
+            </label>
+          </form>
+        ) : null}
+        {startWeb && startGame ? (
+          <LetterComponent callback={startQuizGame} />
+        ) : null}
         {loading ? <p>Loading Questions... </p> : null}
         {!loading && !gameOver && (
           <QuestionCard

@@ -40,7 +40,7 @@ const LetterComponent: React.FC<Props> = ({ callback }) => {
         <Typewriter
           options={{
             autoStart: false,
-            delay: 50,
+            delay: 50,  
             cursor: '',
           }}
           onInit={(typewriter) => {

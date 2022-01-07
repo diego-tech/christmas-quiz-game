@@ -44,4 +44,12 @@ export const Wrapper = styled.div`
     padding: 0 40px;
     font-size: 0.9rem;
   }
+
+  .form label input {
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 30px;
+    padding: 3px;
+  }
 `;
